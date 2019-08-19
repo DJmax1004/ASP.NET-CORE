@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\Controllers",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Cliente",
+    "\\Views\\Home"
+  ],
+  "SelectedNode": "\\Views\\Cliente\\Cadastrar.cshtml",
+  "PreviewInSolutionExplorer": false
+}
