@@ -1,0 +1,29 @@
+﻿@model IList<Zoo>
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Listar</h1>
+
+<a asp-action="Cadastrar" asp-controller="Zoo">Cadastrar</a>
+
+<mensagem texto="@TempData["msg"]"></mensagem>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Data de Abertura</th>
+        <th>Jaulas</th>
+        <th>Entidade Administradora</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.DataAbertura.ToShortDateString()</td>
+            <td>@item.Jaulas</td>
+            <td>@item.EntidadeAdministradora</td>
+        </tr>
+    }
+</table>
+
